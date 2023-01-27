@@ -10,6 +10,7 @@ import Navbar from './Components/layout/Navbar'
 import AddUser from "./Components/user/AddUser";
 import EditUser from "./Components/user/EditUser";
 import ViewUser from "./Components/user/ViewUser";
+import './App.css'
 const App = ()=>{
   // const navigate = useNavigate()
   // const location = useLocation();

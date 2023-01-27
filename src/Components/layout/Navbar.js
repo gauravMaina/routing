@@ -1,6 +1,9 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React,{useState} from "react";
+import AddUser from "../user/AddUser";
+import { NavLink} from "react-router-dom";
+import './nav.css'
 const Navbar = ()=>{
+  //className="navbar navbar-expand-lg navbar-dark bg-dark"
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
@@ -21,7 +24,19 @@ const Navbar = ()=>{
         </li>
       </ul>
     </div>
-    <NavLink className="btn btn-outline-light" to='/users/add'>Add User </NavLink>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  AddUser
+</button>
+{/* <!-- Modal --> */}
+<div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content">
+      <div className="modal-body">
+      <AddUser/>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 </nav>
     );

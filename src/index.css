@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  max-width: 900px;
+  /* max-width: 900px; */
 }
 nav ul {
   display: flex;
@@ -26,4 +26,7 @@ nav a {
   width: 100vw;
   display: flex;
   justify-content: center;
+}
+.btn{
+  margin-right: 6px;
 }
